@@ -1,0 +1,146 @@
+body {
+    font-family: "Berserk", serif;
+    background-image: url(../css/image/imagem\ de\ fundo\ berserk.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height:100vh;
+    gap: 30px;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+}
+
+.cabecalho .titulo {
+    color: whitesmoke;
+}
+
+.cartao {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    gap: 5px;
+    position: absolute;
+
+}
+
+.cartao.selecionada {
+    opacity: 1;
+    z-index: 1;
+}
+
+
+
+.lista-personagens {
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+    position: relative;
+
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 130px;
+}
+
+.lista-personagens .nome {
+    font-size: 15px;
+    padding: 5px;
+    text-transform: uppercase;
+    background: radial-gradient(circle, #ff6868, #e4000f, #790000);
+    border: 2px solid #3d0101;
+    border-radius: 5px;
+}
+
+.cartao .estrela {
+    width: 20px;
+    height: 25px;
+    background-image: url(../css/image/nivel-carta.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.cartao .nivel-carta {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    gap: 5px;
+}
+
+.cartao .imagem-carta {
+    max-width: 260px;
+    align-self: center;
+}
+
+.cartao .informacoes {
+    border-radius: 5px;
+    max-width: 300px;
+    color: rgb(0, 0, 0);
+    background: radial-gradient(circle, #ff6868, #e4000f, #790000);
+    border: 2px solid #3d0101;
+    text-align: left;
+    line-height: 1.5;
+    padding: 5px;
+}
+
+.cartao .informacoes-ataque {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2px;
+    padding: 1px;
+}
+
+
+.cartao .informacoes-ataque {
+    font-size: 13;
+}
+
+.cartao .informacoes .descricao {
+    border-bottom: 1px solid #000000;
+    padding: 1px;
+    max-height: 70px;
+    overflow-y: scroll;
+    font-size: 8px;
+}
+
+.fundo-1 {
+    background: url(../css/image/fundo-1.jpg);
+}
+
+.fundo-2 {
+    background: url(../css/image/fundo-2.jpg);
+}
+
+.fundo-3 {
+    background: url(../css/image/fundo-3.jpg);
+}
+
+.fundo-4 {
+    background: url(../css/image/fundo-4.jpg);
+}
+
+.lista-personagens .imagem-arta {
+    width: 265px;
+    height: 350px;
+
+
+}
+
+.btn-voltar {
+    transform: scaleX(-1);
+}
+
+.btn-seta {
+
+    border-radius: 25px
+}
