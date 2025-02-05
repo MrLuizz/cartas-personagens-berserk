@@ -3,6 +3,21 @@ const btnvoltar = document.getElementById('btn-voltar');
 const cartoes = document.querySelectorAll(".cartao");
 let cartaoatual = 0;
 
+cartoes.forEach(cartao => {
+    cartao.addEventListener("click", function () {
+        const cartavirada = cartao.querySelector(".carta-virada");
+
+        // virar o cartao
+        cartao.classList.toggle("virar");
+        //mostrar o fundo da carta
+        cartavirada.classList.toggle('mostrar-fundo-carta');
+
+        const descricao = cartao.querySelector.apply("descricao");
+        descricao.classList.toggle("esconder");
+
+    });
+});
+
 btnavancar.addEventListener('click', function () {
     if (cartaoatual === cartoes.length - 1) return;
 
@@ -12,12 +27,12 @@ btnavancar.addEventListener('click', function () {
     mostrarcartao(cartaoatual);
 });
 
-btnvoltar.addEventListener('click', function(){
-    if(cartaoatual === 0)return
-    
+btnvoltar.addEventListener('click', function () {
+    if (cartaoatual === 0) return
+
     escondercartaoselecionada();
 
-    cartaoatual --;
+    cartaoatual--;
     mostrarcartao(cartaoatual);
 });
 
